@@ -1,0 +1,267 @@
+{
+  "id": "enoa-module",
+  "title": "Эноа",
+  "description": "Мир где чтут Закон Неба, а знамениям подчиняются даже боги. Плоть, погибших в войне звезд превратилась в ценнейшую монету, наполняющую карманы власть имущих. Ленты обо, танцуя с ветром, шепчут завязанные на них молитвы.",
+  "version": "1.0.0",
+  "compatibility": {
+    "minimum": "11",
+    "verified": "13"
+  },
+  "relationships": {
+    "systems": [
+      {
+        "id": "dnd5e",
+        "type": "system",
+        "compatibility": {
+          "minimum": "4.0.0",
+          "maximum": "5.9.99"
+        }
+      }
+    ],
+    "recommends": [
+      {
+        "id": "socketlib",
+        "type": "module"
+      },
+      {
+        "id": "lib-wrapper",
+        "type": "module"
+      },
+      {
+        "id": "dae",
+        "type": "module"
+      }
+    ]
+  },
+  "packFolders": [
+    {
+      "name": "Эноа 0.35",
+      "sorting": "m",
+      "color": "#5b21b6",
+      "folders": [
+        {
+          "name": "Игроку",
+          "sorting": "m",
+          "color": "#0F2C22",
+          "folders": [
+            {
+              "name": "Классы",
+              "sorting": "m",
+              "color": "#184737",
+              "packs": ["classes", "classfeatures"],
+              "folders": []
+            },
+            {
+              "name": "Расы",
+              "sorting": "m",
+              "color": "#21634C",
+              "packs": ["races", "racefeatures"],
+              "folders": []
+            },
+            {
+              "name": "Заклинания",
+              "sorting": "m",
+              "color": "#329B77",
+              "packs": ["spells"],
+              "folders": []
+            }
+          ],
+          "packs": []
+        },
+        {
+          "name": "Мастеру",
+          "sorting": "m",
+          "color": "#3F2116",
+          "folders": [
+            {
+              "name": "Чудовища",
+              "sorting": "m",
+              "color": "#5B2F1F",
+              "packs": ["monsters"],
+              "folders": []
+            },
+            {
+              "name": "Знамения",
+              "sorting": "m",
+              "color": "#763D28",
+              "packs": ["intro", "list"],
+              "folders": []
+            },
+            {
+              "name": "Предметы и Товары",
+              "sorting": "m",
+              "color": "#924A31",
+              "packs": ["items", "goods"],
+              "folders": []
+            }
+          ],
+          "packs": []
+        }
+      ],
+      "packs": []
+    }
+  ],
+  "packs": [
+    {
+      "name": "classes",
+      "label": "# Классы",
+      "path": "packs/classes",
+      "type": "Item",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "banner": "https://raw.githubusercontent.com/laaruk/images/main/pic/Banner_classes.webp",
+      "flags": {
+        "dnd5e": {
+          "types": ["class"]
+        }
+      }
+    },
+    {
+      "name": "racefeatures",
+      "label": "# Особенности расы",
+      "path": "packs/racefeatures",
+      "type": "Item",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "banner": "https://raw.githubusercontent.com/laaruk/images/main/pic/Banner_subclasses.webp",
+      "flags": {
+        "dnd5e": {
+          "types": ["subclass"]
+        }
+      }
+    },
+    {
+      "name": "classfeatures",
+      "label": "# Особенности класса",
+      "path": "packs/classfeatures",
+      "type": "Item",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "banner": "https://raw.githubusercontent.com/laaruk/images/main/pic/Banner_features.webp",
+      "flags": {
+        "dnd5e": {
+          "types": ["feat"]
+        }
+      }
+    },
+    {
+      "name": "races",
+      "label": "# Расы",
+      "path": "packs/races",
+      "type": "Item",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "banner": "https://raw.githubusercontent.com/laaruk/images/main/pic/Banner_races.webp",
+      "flags": {
+        "dnd5e": {
+          "types": ["race", "feat"]
+        }
+      }
+    },
+    {
+      "name": "spells",
+      "label": "# Заклинания",
+      "path": "packs/spells",
+      "type": "Item",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "banner": "https://raw.githubusercontent.com/laaruk/images/main/pic/Banner_spell.webp",
+      "flags": {
+        "dnd5e": {
+          "types": ["spell"]
+        }
+      }
+    },
+    {
+      "name": "monsters",
+      "label": "# Чудовища том 1",
+      "path": "packs/monsters",
+      "type": "Actor",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "NONE",
+        "TRUSTED": "NONE",
+        "ASSISTANT": "OWNER"
+      },
+      "banner": "https://raw.githubusercontent.com/laaruk/images/main/pic/Banner_monsters.webp",
+      "flags": {
+        "dnd5e": {
+          "types": ["npc"]
+        }
+      }
+    },
+    {
+      "name": "list",
+      "label": "# Знамения",
+      "path": "packs/list",
+      "type": "JournalEntry",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "banner": "https://raw.githubusercontent.com/laaruk/images/main/pic/Banner_intro.webp",
+      "flags": {
+        "display": "table-of-contents"
+      }
+    },
+    {
+      "name": "items",
+      "label": "# Предметы",
+      "path": "packs/items",
+      "type": "Item",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "banner": "https://raw.githubusercontent.com/laaruk/images/main/pic/Banner_item.webp",
+      "flags": {
+        "dnd5e": {
+          "types": ["weapon", "equipment", "consumable", "tool", "loot", "container"]
+        }
+      }
+    },
+    {
+      "name": "goods",
+      "label": "# Товары",
+      "path": "packs/goods",
+      "type": "Item",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "banner": "https://raw.githubusercontent.com/laaruk/images/main/pic/Banner_goods.webp",
+      "flags": {
+        "dnd5e": {
+          "types": ["consumable", "tool", "loot", "container"]
+        }
+      }
+    }
+  ],
+  "authors": [
+    {
+      "name": "Largo",
+      "flags": {}
+    }
+  ],
+  "url": "https://github.com/matyusovp/enoa/archive/refs/heads/main.zip",
+  "manifest": "https://github.com/matyusovp/enoa/blob/main/module.json",
+  "download": ""
+}
