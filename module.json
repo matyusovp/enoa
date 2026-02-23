@@ -262,6 +262,7 @@
     }
   ],
   "url": "https://github.com/matyusovp/enoa/archive/refs/heads/main.zip",
-  "manifest": "https://github.com/matyusovp/enoa/blob/main/module.json",
+  "manifest": "https://raw.githubusercontent.com/matyusovp/enoa/main/module.json",
   "download": ""
+
 }
